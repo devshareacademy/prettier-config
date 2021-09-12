@@ -1,26 +1,26 @@
 {
   "name": "@scottwestover/prettier-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared prettier config for my projects",
   "main": "index.js",
   "scripts": {
-		"package-publish": "npm publish --registry https://npm.pkg.github.com/"
-	},
+    "package-publish": "npm publish --registry https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scottwestover/prettier-config.git"
   },
   "publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "prettier",
     "prettierconfig"
   ],
   "author": {
-		"name": "Scott Westover",
-		"email": "scottwestover2006@gmail.com"
-	},
+    "name": "Scott Westover",
+    "email": "scottwestover2006@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/scottwestover/prettier-config/issues"
