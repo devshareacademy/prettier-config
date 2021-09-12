@@ -27,7 +27,7 @@ If you want to extend the configuration, or not place in the `package.json`, you
 
 ```javascript
 module.exports = {
-  ...require("@company/prettier-config"),
+  ...require("@scottwestover/prettier-config"),
   semi: false,
 };
 ```
@@ -41,3 +41,11 @@ npm login --scope=@scottwestover --registry=https://npm.pkg.github.com
 # Run publish script
 yarn package-publish
 ```
+
+---
+
+## Shared Configurations
+
+- @scottwestover/eslint-config: [eslint-config](https://github.com/scottwestover/eslint-config)
+- @scottwestover/tsconfig: [tsconfig](https://github.com/scottwestover/tsconfig)
+- @scottwestover/prettier-config: [prettier-config](https://github.com/scottwestover/prettier-config)
