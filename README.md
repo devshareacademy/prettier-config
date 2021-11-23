@@ -15,7 +15,7 @@ You can install this package from the GitHub NPM Package Repository. In order to
 ```bash
 yarn config set @lookio:registry https://npm.pkg.github.com/
 echo "//npm.pkg.github.com/:_authToken=<github_personal_access_token>" > .npmrc
-yarn add -DE @devshareacademy/eslint-config
+yarn add -DE @devshareacademy/prettier-config
 ```
 
 ## Usage
