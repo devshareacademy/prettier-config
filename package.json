@@ -1,17 +1,15 @@
 {
-  "name": "@scottwestover/prettier-config",
-  "version": "0.0.2",
+  "name": "@devshareacademy/prettier-config",
+  "version": "0.0.1",
   "description": "Shared prettier config for my projects",
   "main": "index.js",
   "scripts": {
-    "package-publish": "npm publish --registry https://npm.pkg.github.com/"
+    "publish:npm": "npm publish --registry https://registry.npmjs.org/ --access public --ignore-scripts",
+    "publish:github": "npm publish --registry https://npm.pkg.github.com/ --ignore-scripts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scottwestover/prettier-config.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "url": "git+https://github.com/devshareacademy/prettier-config.git"
   },
   "keywords": [
     "prettier",
@@ -23,7 +21,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scottwestover/prettier-config/issues"
+    "url": "https://github.com/devshareacademy/prettier-config/issues"
   },
-  "homepage": "https://github.com/scottwestover/prettier-config#readme"
+  "homepage": "https://github.com/devshareacademy/prettier-config#readme"
 }

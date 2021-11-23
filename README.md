@@ -5,10 +5,18 @@
 ## Install
 
 ```bash
-yarn add -DE @scottwestover/prettier-config
+yarn add -DE @devshareacademy/prettier-config
 ```
 
-**Note:** In order to install this package, you will need to make sure `npm` is set to download `scottwestover` scoped packages from the GitHub Package Repository. More information on this can be found here: [GitHub Install Packages](https://docs.github.com/en/packages/learn-github-packages/installing-a-package).
+### Install Via GitHub NPM Packages
+
+You can install this package from the GitHub NPM Package Repository. In order to do this, you must first authenticate with GitHub packages. You can read more about this process here: [GitHub - Installing A GitHub Package](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#installing-a-package).
+
+```bash
+yarn config set @lookio:registry https://npm.pkg.github.com/
+echo "//npm.pkg.github.com/:_authToken=<github_personal_access_token>" > .npmrc
+yarn add -DE @devshareacademy/eslint-config
+```
 
 ## Usage
 
@@ -17,7 +25,7 @@ yarn add -DE @scottwestover/prettier-config
 ```json
 {
   "name": "some-package-name",
-  "prettier": "@scottwestover/prettier-config"
+  "prettier": "@devshareacademy/prettier-config"
 }
 ```
 
@@ -27,7 +35,7 @@ If you want to extend the configuration, or not place in the `package.json`, you
 
 ```javascript
 module.exports = {
-  ...require("@scottwestover/prettier-config"),
+  ...require("@devshareacademy/prettier-config"),
   semi: false,
 };
 ```
@@ -35,17 +43,19 @@ module.exports = {
 ## Publish New Version
 
 ```bash
-# Authenticate with GitHub NPM Package Registry
-npm login --scope=@scottwestover --registry=https://npm.pkg.github.com
+# Authenticate with NPM Package Registry
+npm login
 
 # Run publish script
-yarn package-publish
+yarn publish:npm
+yarn publish:github
 ```
 
 ---
 
 ## Shared Configurations
 
-- @scottwestover/eslint-config: [eslint-config](https://github.com/scottwestover/eslint-config)
-- @scottwestover/tsconfig: [tsconfig](https://github.com/scottwestover/tsconfig)
-- @scottwestover/prettier-config: [prettier-config](https://github.com/scottwestover/prettier-config)
+- @devshareacademy/eslint-config: [eslint-config](https://github.com/devshareacademy/eslint-config)
+- @devshareacademy/tsconfig: [tsconfig](https://github.com/devshareacademy/tsconfig)
+- @devshareacademy/prettier-config: [prettier-config](https://github.com/devshareacademy/prettier-config)
+config: [prettier-config](https://github.com/scottwestover/prettier-config)
